@@ -42,8 +42,3 @@
 
   })();
 
-
-  //  document.querySelector("h2").style.fontWeight = "700"; 
-//     accItem.style.display = "block";
-//   } else {
-//     document.querySelector("h2").style.fontWeight = "400"; 
