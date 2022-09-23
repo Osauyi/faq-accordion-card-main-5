@@ -1,3 +1,5 @@
+const faqHeaders = document.querySelectorAll('.subhead');
+
 
         (function() {
 
@@ -17,17 +19,18 @@
         dropContent = btn.querySelector('.subtext'),
         shouldOpen = !dropContent.classList.contains('show');
       e.preventDefault();
-
+      
+      faqHeaders.forEach(subhead => {
+        subhead.style.fontWeight = "400"
+      });
+      e.target.style.fontWeight = "700";
         
       closeOpenItems();
       
       if (shouldOpen) {
         
         dropContent.classList.add('show');   
-      //   for (i = 0; i < 6; i++)  {
-      //   document.querySelector("h2").style.fontWeight = "700";[i] 
-      //   console.log("suop")
-      //  }
+      
       }
       e.stopPropagation();
     });
